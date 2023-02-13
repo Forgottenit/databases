@@ -80,13 +80,14 @@ tim_berners_lee = Programmer(
     famous_for="World Wide Web"
 )
 
-Neil_Sloan = Programmer(
+neil_sloan = Programmer(
     first_name="Neil",
     last_name="Sloan",
     gender="Male",
     nationality="Irish",
     famous_for="CI Student"
 )
+
 
 # add each instance of our programmers to our session
 # session.add(ada_lovelace)
@@ -95,8 +96,9 @@ Neil_Sloan = Programmer(
 # session.add(margaret_hamilton)
 # session.add(bill_gates)
 # session.add(tim_berners_lee)
-# session.add(your_name)
+# session.add(neil_sloan)
 
+# session.commit()
 
 # updating a single record
 # programmer = session.query(Programmer).filter_by(id=7).first()
@@ -141,6 +143,7 @@ Neil_Sloan = Programmer(
 # for programmer in programmers:
 #     session.delete(programmer)
 #     session.commit()
+
 
 
 # query the database to find all Programmers
